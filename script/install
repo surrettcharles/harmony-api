@@ -11,7 +11,7 @@ USER_NAME=`whoami`
 
 mkdir -p ~/Library/LaunchAgents
 
-cp config/org.harmony-api.plist ~/Library/LaunchAgents/org.harmony-api.plist
+cp service-config/org.harmony-api.plist ~/Library/LaunchAgents/org.harmony-api.plist
 
 sed -i '' -e "s#%USER%#$USER_NAME#g" ~/Library/LaunchAgents/org.harmony-api.plist
 sed -i '' -e "s#%PATH%#$APP_PATH#g" ~/Library/LaunchAgents/org.harmony-api.plist
