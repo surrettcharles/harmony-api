@@ -1,7 +1,7 @@
 {
   "name": "harmony-api",
-  "version": "2.3.5",
-  "description": "A simple server providing a RESTful and MQTT based service for controlling and monitoring Harmony Hubs.",
+  "version": "1.0.0",
+  "description": "A simple server providing a RESTful and MQTT based service for controlling and monitoring Harmony Hubs. Originally forked from maddox/harmony-api.",
   "scripts": {
     "start": "node app.js"
   },
@@ -9,7 +9,10 @@
     "type": "git",
     "url": "https://github.com/maddox/harmony-api"
   },
-  "author": "Jon Maddox <jon@jonmaddox.com>",
+  "author": {
+    "name": "Charles Surrett",
+    "email": "surrettcharles@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maddox/harmony-api/issues"
