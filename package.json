@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A simple server providing a RESTful and MQTT based service for controlling and monitoring Harmony Hubs. Originally forked from maddox/harmony-api.",
   "scripts": {
-    "start": "node app.js"
+    "prestart": "npm run lint",
+    "start": "node app.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,10 @@
     "morgan": "1.9.0",
     "mqtt": "2.18.8",
     "parameterize": "0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "5.5.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0"
   }
 }
