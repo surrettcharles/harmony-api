@@ -1,26 +1,37 @@
 {
   "name": "harmony-api",
-  "version": "2.3.5",
-  "description": "A simple server providing a RESTful and MQTT based service for controlling and monitoring Harmony Hubs.",
+  "version": "1.0.0",
+  "description": "A simple server providing a RESTful and MQTT based service for controlling and monitoring Harmony Hubs. Originally forked from maddox/harmony-api.",
   "scripts": {
-    "start": "node app.js"
+    "prestart": "npm run lint",
+    "start": "node app.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maddox/harmony-api"
+    "url": "https://github.com/surrettcharles/harmony-api"
   },
-  "author": "Jon Maddox <jon@jonmaddox.com>",
+  "author": {
+    "name": "Charles Surrett",
+    "email": "surrettcharles@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maddox/harmony-api/issues"
+    "url": "https://github.com/surrettcharles/harmony-api/issues"
   },
   "dependencies": {
-    "express": "^4.12.4",
-    "morgan": "^1.6.1",
-    "body-parser": "^1.12.4",
-    "harmonyhubjs-client": "^1.1.0",
-    "harmonyhubjs-discover": "^1.0.2",
-    "parameterize": "^0.0.7",
-    "mqtt": "^1.4.1"
+    "body-parser": "1.18.3",
+    "config": "2.0.1",
+    "express": "4.16.4",
+    "harmonyhubjs-client": "1.1.10",
+    "harmonyhubjs-discover": "1.1.1",
+    "morgan": "1.9.1",
+    "mqtt": "2.18.8",
+    "parameterize": "0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "5.5.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0"
   }
 }
